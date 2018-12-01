@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Шаблон</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light" style="background: #fbba3d">
+  <a class="navbar-brand" href="#">ZeroZeroOne</a>
+  <button class="navbar-toggler" style="background:#e2a734" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="w-100" id="map">
+	<img class="w-100 h-100" src="images/1.jpg" alt="Здесь должна была быть карта">
+</div>
+<div class="container mt-2">
+	<div class="input-group mb-2">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">Откуда</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Пункт погрузки" aria-label="Пункт погрузки" aria-describedby="basic-addon1">
+	</div>
+	<div class="input-group mb-1">
+	  <div class="input-group-prepend">
+	    <span class="input-group-text" id="basic-addon1">Куда</span>
+	  </div>
+	  <input type="text" class="form-control" placeholder="Пункт отгрузки" aria-label="Пункт отгрузки" aria-describedby="basic-addon1">
+	</div>
+	<div class="info-block">
+		<ul class="list-group d-block" id="nottuned">
+		  <li class="list-group-item">
+		  	<div class="input-group mb-1">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="basic-addon1">Вид машины</span>
+			  </div>
+			  <input type="text" class="form-control" placeholder="Пункт отгрузки" aria-label="Пункт отгрузки" aria-describedby="basic-addon1">
+			</div>
+		  </li>
+		  <li class="list-group-item">
+		  	<div class="input-group mb-1">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="basic-addon1">Время</span>
+			  </div>
+			  <input type="text" class="form-control" placeholder="Пункт отгрузки" aria-label="Пункт отгрузки" aria-describedby="basic-addon1">
+			</div>
+		  </li>
+		  <li class="list-group-item">
+		  	<div class="input-group mb-1">
+			  <div class="input-group-prepend">
+			    <span class="input-group-text" id="basic-addon1">Груз</span>
+			  </div>
+			  <input type="text" class="form-control" placeholder="Пункт отгрузки" aria-label="Пункт отгрузки" aria-describedby="basic-addon1">
+			</div>
+		  </li>
+		</ul>
+		<ul class="list-group d-none" id="tuned">
+			<li class="list-group-item" style="padding:.375rem 0.625rem !important;">
+				<div class="row no-gutters">
+					<div class="col-6 pr-1">
+						<div class="input-group mb-1">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="basic-addon1">Скорость</span>
+						  </div>
+						  <span class="form-control" id="basic-addon1">120км/ч</span>
+						</div>
+					</div>
+					<div class="col-6 pl-1">
+						<div class="input-group mb-1">
+						  <div class="input-group-prepend">
+						    <span class="input-group-text" id="basic-addon1">Время</span>
+						  <span class="form-control" id="basic-addon1">Меньше часа</span>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<ul class="progressbar w-100 row no-gutters mt-3">
+	        	<li class="col active">Якутск</li>
+	          	<li class="col active">Марха</li>
+	          	<li class="col">Село 3</li>
+	          	<li class="col">Село 4</li>
+	          	<li class="col">Село 5</li>
+	  		</ul>
+		</ul>
+	</div>
+</div>
+<button type="button" class="btn w-100 rounded-0 navbar-dark navbar fixed-bottom" id="subcal" style="background:#fbba3d;">
+  <span class="navbar-brand mb-0 h2" style="margin:0 auto;transform: scale(1.1,1.1);">Рассчитать</span>
+</button>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
